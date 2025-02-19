@@ -35,7 +35,7 @@ function gerarNumeroAleatorio () {
 function verificarChute() {
     let chute = document.querySelector('input').value
     if (chute == numeroSecreto) {
-        exibirTextoNaTela('h1', 'Você acertou !');
+        exibirTextoNaTela('h1', 'Você acertou, parabéns !');
         let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
         let mensagemTentativa = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}`;
         exibirTextoNaTela('p', mensagemTentativa);
